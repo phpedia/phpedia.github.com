@@ -10,7 +10,8 @@ $(document).ready(function(){
 
   $(".post-link").live("click",function(e){
     e.preventDefault();
-    $('#'+$(this).attr("href")).load("http://phpedia.github.com"+$(this).attr("href"));
+    $(".post-content").hide();
+    $('#'+$(this).attr("href")).load("http://phpedia.github.com"+$(this).attr("href")).show();
   });
 
 });
@@ -19,7 +20,7 @@ $(document).ready(function(){
 {% for post in site.posts %}
   <li>
     <a class="post-link" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
-    <p id="{{post.url}}"></p>
+    <p class="post-content" id="{{post.url}}"></p>
   </li>
 {% endfor %}
 </ul>
