@@ -11,7 +11,8 @@ $(document).ready(function(){
   $(".post-link").live("click",function(e){
     e.preventDefault();
     $(".post-content").hide();
-    $('#'+$(this).attr("href")).load("http://phpedia.github.com"+$(this).attr("href")).show();
+    $('#'+$(this).attr("href")).load($(this).attr("href")).show();
+    console.log("Opening post "+$(this).attr("href"));
   });
 
 });
