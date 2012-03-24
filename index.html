@@ -4,9 +4,22 @@ title: PHPedia
 ---
 
 Welcome to phpedia!
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function(){
 
+  $(".post-link").live("click",function(e){
+    e.preventDefault();
+    $('#'+$(this).attr("href")).load("http://phpedia.github.com"+$(this).attr("href"));
+  });
+
+});
+</script>
 <ul>
 {% for post in site.posts %}
-	<li><a href="http://phpedia.github.com{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a></li>
+  <li>
+    <a class="post-link" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
+    <p id="{{post.url}}"></p>
+  </li>
 {% endfor %}
 </ul>
