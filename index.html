@@ -7,6 +7,6 @@ Welcome to phpedia!
 
 <ul>
 {% for post in site.posts %}
-	<li>{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</li>
+	<li><a href="http://phpedia.github.com{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a></li>
 {% endfor %}
 </ul>
