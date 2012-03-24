@@ -7,13 +7,13 @@ Welcome to phpedia!
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script>
 $(document).ready(function(){
-
+  $(".post-content").hide();
   $(".post-link").live("click",function(e){
     e.preventDefault();
     href = $(this).attr("href");
     $(".post-content").hide();
     $('#'+href).load(href).show();
-    console.log("Opening post "+$(this).attr("href"));
+    console.log("Opening post "+href);
   });
 
 });
