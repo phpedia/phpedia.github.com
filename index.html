@@ -10,8 +10,9 @@ $(document).ready(function(){
 
   $(".post-link").live("click",function(e){
     e.preventDefault();
+    href = $(this).attr("href");
     $(".post-content").hide();
-    $('#'+$(this).attr("href")).load($(this).attr("href")).show();
+    $('#'+href).load(href).show();
     console.log("Opening post "+$(this).attr("href"));
   });
 
