@@ -22,7 +22,7 @@ $(document).ready(function(){
 {% for post in site.posts %}
   <li>
     <a class="post-link" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
-    <p class="post-content" id="{{post.url}}"></p>
+    <div class="post-content" id="{{post.url}}"></div>
   </li>
 {% endfor %}
 </ul>
