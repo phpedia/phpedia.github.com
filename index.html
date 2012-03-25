@@ -11,8 +11,9 @@ $(document).ready(function(){
   $(".post-link").live("click",function(e){
     e.preventDefault();
     href = $(this).attr("href");
+    id = $(this).attr("title");
     $(".post-content").hide();
-    $('#'+href).load(href).show();
+    $('#'+id).load(href).show();
     console.log("Opening post "+href);
   });
 
@@ -21,8 +22,8 @@ $(document).ready(function(){
 <ul>
 {% for post in site.posts %}
   <li>
-    <a class="post-link" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
-    <div class="post-content" id="{{post.url}}"></div>
+    <a class="post-link" title="{{post.id}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
+    <div class="post-content" id="{{post.id}}"></div>
   </li>
 {% endfor %}
 </ul>
