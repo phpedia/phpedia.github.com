@@ -23,8 +23,9 @@ $(document).ready(function(){
 </script>
 {% for post in site.posts %}
   <div class="post-area">
-    <h3></h3>
-    <a class="post-link" title="{{forloop.index}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}} - {{post.author}} - {{post.email}}</a>
+    <a class="post-link" title="{{forloop.index}}" href="{{post.url}}">
+      <h3>{{post.title}}</h3>
+    </a>
     <div class="post-content" id="{{forloop.index}}"></div>
   </div>
 {% endfor %}
