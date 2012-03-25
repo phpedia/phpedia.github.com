@@ -8,6 +8,7 @@ Welcome to phpedia!
 <script>
 $(document).ready(function(){
   $(".post-content").hide();
+  $(".post-content").html(" ");
   $(".post-link").live("click",function(e){
     e.preventDefault();
     href = $(this).attr("href");
