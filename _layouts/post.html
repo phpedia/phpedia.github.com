@@ -4,7 +4,7 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ page.title }}</h1>
+						<h1 class="h2 entry-title">{{ page.title }} 		By {{page.author}} <img src="http://host.phpedia.org/gravatar.php?mail={{page.email}}"/></h1>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
@@ -20,6 +20,7 @@
 							<span class="day">{{ page.date | date: '%d' }}</span>
 							<span class="year">{{ page.date | date: '%Y' }}</span>
 							</date>
+									By {{page.author}} <img src="http://host.phpedia.org/gravatar.php?mail={{page.email}}"/>
 						</p>
 						<ul class="list-category list-linear">
 							<li class="list-head">category: </li>
