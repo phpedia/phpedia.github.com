@@ -26,6 +26,6 @@ $(document).ready(function(){
     <a class="post-link" title="{{id}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
     <div class="post-content" id="{{id}}"></div>
   </li>
-{% assign id = id + 1 %}
+{% assign id = id | plus:1 %}
 {% endfor %}
 </ul>
