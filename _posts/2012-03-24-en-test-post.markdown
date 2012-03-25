@@ -12,6 +12,9 @@ This is just a test
 
 PHP Code
 --------------
-	<?php
-		echo "Hello Guys";
-	?>
+```php
+<?php
+	echo "Hello Guys";
+?>
+```
+
