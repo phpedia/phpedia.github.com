@@ -20,10 +20,12 @@ $(document).ready(function(){
 });
 </script>
 <ul>
+{% id = 0 %}
 {% for post in site.posts %}
   <li>
-    <a class="post-link" title="{{post.id}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
-    <div class="post-content" id="{{post.id}}"></div>
+    <a class="post-link" title="{{id}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
+    <div class="post-content" id="{{id}}"></div>
   </li>
+{% id = id + 1 %}
 {% endfor %}
 </ul>
