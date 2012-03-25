@@ -12,9 +12,9 @@ This is just a test
 
 PHP Code
 --------------
-```php
+{% highlight php %}
 <?php
 	echo "Hello Guys";
 ?>
-```
+{% endhighlight %}
 
