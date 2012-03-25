@@ -9,6 +9,7 @@ Welcome to phpedia!
 $(document).ready(function(){
   $(".post-content").hide();
   $(".post-content").html(" ");
+  $(".post-content").children().empty();
   $(".post-link").live("click",function(e){
     e.preventDefault();
     href = $(this).attr("href");
@@ -23,7 +24,7 @@ $(document).ready(function(){
 <ul>
 {% for post in site.posts %}
   <li>
-    <a class="post-link" title="{{forloop.index}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</a>
+    <a class="post-link" title="{{forloop.index}}" href="{{post.url}}">{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}} - {{post.author}} - {{post.email}}</a>
     <div class="post-content" id="{{forloop.index}}"></div>
   </li>
 {% endfor %}
