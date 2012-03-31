@@ -1,1 +1,6 @@
-pygments: true
+title : PHPedia
+paginate : 1
+author :
+  name   : PHPedia
+  email  : blah@email.test
+  github : phpedia
