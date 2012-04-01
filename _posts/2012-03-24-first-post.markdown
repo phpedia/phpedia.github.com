@@ -1,5 +1,7 @@
 ---
 layout: post
+author:phpediaTeam
+email:kinncj@gmail.com
 tags: [test, start]
 title: First Post
 header: First Post
