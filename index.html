@@ -1,31 +1,35 @@
 ---
-layout: default
+layout: page
 title: PHPedia
+tagline: Open knowledge
 ---
+{% include JB/setup %}
 
-Welcome to phpedia!
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-/*$(document).ready(function(){
-  $(".post-content").hide();
-  $(".post-content").html(" ");
-  $(".post-content").children().empty();
-  $(".post-link").live("click",function(e){
-    e.preventDefault();
-    href = $(this).attr("href");
-    id = $(this).attr("title");
-    $(".post-content").hide();
-    $('#'+id).load(href).show();
-    console.log("Opening post "+href);
-  });
+<ul class="posts">
+  {% for post in paginator.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>
+  {% endfor %}
+</ul>
 
-});*/
-</script>
-{% for post in site.posts %}
-  <div class="post-area">
-    <a class="post-link" title="{{forloop.index}}" href="{{post.url}}">
-      <h3>{{post.title}} - {{post.author}} <img src="http://host.phpedia.org/gravatar.php?mail={{post.email}}"/>({{ post.date }})</h3>
-    </a>
-    <div class="post-content" id="{{forloop.index}}"></div>
-  </div>
-{% endfor %}
+
+<div class="pagination">
+  <ul>
+  {% if paginator.previous_page %}
+	{% if paginator.previous_page <= 1 %}
+    <li class="prev"><a href="/" title="Home">&larr; Previous</a></li>
+	{% else %}
+	<li class="prev"><a href="/page{{ paginator.previous_page }}" title="{{ paginator.previous_page }}">&larr; Previous</a></li>
+	{% endif %}
+  {% else %}
+    <li class="prev disabled"><a>&larr; Previous</a></li>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <li class="next"><a href="/page{{ paginator.next_page }}" title="{{ paginator.next_page }}">Next &rarr;</a></li>
+  {% else %}
+    <li class="next disabled"><a>Next &rarr;</a>
+  {% endif %}
+  </ul>
+</div>
+
+Page {{paginator.page}} of {{paginator.total_pages}}
