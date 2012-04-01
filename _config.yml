@@ -11,6 +11,7 @@ paginate: 10
 # so be sure to set them if your theme uses them.
 #
 title : PHPedia
+description: PHPedia, Open Knowledge
 author :
   name : PHPedia
   email : blah@email.test
