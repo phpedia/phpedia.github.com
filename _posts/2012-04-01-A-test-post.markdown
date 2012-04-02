@@ -1,10 +1,9 @@
 ---
 layout: post
-author:Kinn Coelho Julião
-email:kinncj@gmail.com
 tags: [test, start]
 title: It's just a test
-header: Testing
+author: Kinn Coelho Julião
+email: kinncj@gmail.com
 ---
 Hello guys, i'm testing this
 {% highlight php %}
