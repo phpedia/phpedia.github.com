@@ -35,11 +35,3 @@ Yeah, creazy hun?
 
 Let's do some piece of code... 
 At first we need a table, right?
-
-######So
-
-{% highlight %}
-   
-    asdasd
- 
-{% endhighlight %}
