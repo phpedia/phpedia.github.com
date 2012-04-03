@@ -11,16 +11,17 @@ In this article i'll show you the PDO _fetchObject_ working fine with a _VO_.
 
 ***
 
-At first time, i'll create a simple _VO_ called _UserVO_
+At first time, i'll create a simple _VO_ called _UserVO_ !
 
 {% highlight php %}
 <?php
-//UserVO.php
-class UserVO{
-public $name,$email,$phone,$address; // We don't exactly need this... but i love to declare things.
+  //UserVO.php
+  class UserVO{
+    public $name,$email,$phone,$address; // We don't exactly need this... but i love to declare things.
         
-//declare anything else that you want here!  
-}
+  //declare anything else that you want here!  
+  }
+?>
 {% endhighlight %}
 
 Like you can see, we have an _UserVO_ with _name_, _email_, _phone_ and _address_ attributes.
