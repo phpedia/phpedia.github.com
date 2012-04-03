@@ -39,8 +39,7 @@ At first we need a table, right?
 ######So
 
 {% highlight %}
-
-    CREATE TABLE users(id int not null primary key auto_increment, name text, email varchar(255), phone int(11), address text);
-
+   
+    asdasd
+ 
 {% endhighlight %}
-
