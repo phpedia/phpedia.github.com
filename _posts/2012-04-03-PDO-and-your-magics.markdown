@@ -34,7 +34,7 @@ At first we need a table, right?
 
 ###### So
 
-{% highlight %}
+{% highlight sql %}
 CREATE TABLE users(id int not null primary key auto_increment, name text, email varchar(255), phone int(11), address text);
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ email is varchar(255) cuz i dont think someone has a bigger email address than i
 name is text cuz people have big names ;)
 address is text... cuz, it's a full address
 
-{% highlight %}
+{% highlight sql %}
 INSERT INTO users(name,email,phone,address) VALUES('test user','user@localhost',1199999999,'São Paulo');
 {% endhighlight %}
 
