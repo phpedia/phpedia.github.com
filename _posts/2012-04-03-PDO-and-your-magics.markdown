@@ -49,7 +49,7 @@ CREATE TABLE users(id int not null primary key auto_increment, name text, email 
 INSERT INTO users(name,email,phone,address) VALUES('test user','user@localhost',1199999999,'São Paulo');
 {% endhighlight %}
 
-populate it! _Come_at_me_Bro_!
+populate it! _Come_ _at_ _me_ _Bro_ !
 
 
 ###### And our php code
