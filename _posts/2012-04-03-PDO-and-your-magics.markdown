@@ -9,6 +9,40 @@ email: kinncj@gmail.com
 
 In this article i'll show you the PDO _fetchObject_ working fine with a _VO_.
 
+According to Martin Fowler, Eric Evans and other evangelists of a rich domain model, a Value Object is a simple object, usually with attributes that do not reference other objects, immutable and no identity, they are merely representative. 
+
+In other words, a true value object - The object that is worth something. 
+
+Examples:
+*Number: is a typical example of a VO. Its value justifies its existence. It is immutable, because you can not change the values of a number. 
+You must create a new to this. 
+Their comparison is not just in all his attributes, comparing only the value which represents enough.
+*Money: Philip Footwear, probably based on the example of Fowler, gives a great example of VO talking about the Money object. 
+A money, we assume here, Dollar, has a value of one, five, ten, fifty, etc ... in real life, is a part. 
+Obviously, change its value would result in erasure or problems with the police, thus justifying its immutability, however, if I borrow ten dollars, no need to receive the same pay ten dollars. 
+It may be another note, both having the same value.
+*Colour: Why, a color valley, herm ... a color! 
+Why to represent colors is much better to use Enums, by the way, all or the vast majority of what PO should be possible to represent using Enumerators.
+
+
+It gave great insight to understand the true VO? 
+
+It represents a value, simple and intuitive, right? 
+
+Very close to what we call primitive, after all, if the creators of programming languages, knew all VOs possible, we would not need to have objects explicitly declared for them, because our compilers recognize a simple USD 10.30 in the editor, and ten dollars and thirty cents.
+
+But then, it was not quite what you thought was a VO? 
+
+Well, I guess let's see: 
+
+For you, a VO was a structure with getterns and setters, commonly used to carry values ​​between layers and layers. 
+
+So, well this is the same confusion. 
+
+This is the TO (Transfer Object) - an adaptation of the Data-Transfer Object pattern (also cataloged by Fowler) - The TO is actually a composite of several attributes, serialized (is transported between layers), serving mainly to minimize traffic objects in a network.
+
+## Come on, let's do it!
+
 At first time, i'll create a simple _VO_ called _UserVO_
 
 {% highlight php %}
@@ -28,7 +62,7 @@ This is basicly a return from a UserDAO or a user table from your database.
 ### What's the magic?
 
 Basicly, when we fetch some data from database, we'll tell to PDO to put's the result into this _VO_ ..
-Yeah, creazy hun?
+Yeah, _crazy_ _hun_?
 
 Let's do some piece of code...
 
