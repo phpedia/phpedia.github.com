@@ -14,14 +14,17 @@ According to Martin Fowler, Eric Evans and other evangelists of a rich domain mo
 In other words, a true value object - The object that is worth something. 
 
 Examples:
-*Number: is a typical example of a VO. Its value justifies its existence. It is immutable, because you can not change the values of a number. 
+
+* Number: is a typical example of a VO. Its value justifies its existence. It is immutable, because you can not change the values of a number. 
 You must create a new to this. 
 Their comparison is not just in all his attributes, comparing only the value which represents enough.
-*Money: Philip Footwear, probably based on the example of Fowler, gives a great example of VO talking about the Money object. 
+
+* Money: Philip Footwear, probably based on the example of Fowler, gives a great example of VO talking about the Money object. 
 A money, we assume here, Dollar, has a value of one, five, ten, fifty, etc ... in real life, is a part. 
 Obviously, change its value would result in erasure or problems with the police, thus justifying its immutability, however, if I borrow ten dollars, no need to receive the same pay ten dollars. 
 It may be another note, both having the same value.
-*Colour: Why, a color valley, herm ... a color! 
+
+* Colour: Why, a color valley, herm ... a color! 
 Why to represent colors is much better to use Enums, by the way, all or the vast majority of what PO should be possible to represent using Enumerators.
 
 
