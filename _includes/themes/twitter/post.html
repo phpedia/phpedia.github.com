@@ -26,7 +26,7 @@
   </div>
   
   <div class="span4">
-    <h4>{% if page.author %}Last commit by {{page.author}}{% endif %}{% if page.email %}<img src="http://host.phpedia.org/gravatar.php?mail={{page.email}}"/>{% endif %}</h4>
+    <h4>{% if page.commiter %}Last commit by {{page.commiter}}{% endif %}{% if page.email %}<img src="http://host.phpedia.org/gravatar.php?mail={{page.email}}"/>{% endif %}</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
   {% unless page.tags == empty %}
