@@ -45,6 +45,10 @@ Cool, how we do this? with Github pages and Jekyll! simple... so, we have the PH
 ## How it works at all?
 So, we need to see our rules, and basicly you will write your articles in Markdow(or textile) and that's it :)
 
+{% highlight php %}
+TextMate is a good editor to write markdown... but you can find others, even online editors
+{% endhighlight %}
+
 Then, you can share with others and i this way we are disseminating PHP Knowledge :)
 
 ## Contribute n enjoy :)
