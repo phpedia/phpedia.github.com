@@ -85,41 +85,48 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 
 ###### And our php code
 
+Let's register an autoloader. So we have spl_autoloader_register
+
+In this way, we can register a lot of autoloaders in our application... we can register the Doctrine autoloader, the Twig autoloader, and others...
 {% highlight php %}
 <?php
-  //Let's register an autoloader
-  /*In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others*/
   spl_autoload_register(function($className){
     require_once str_replace(array('\\','_'),'/',$className).'.php';
   });
 {% endhighlight %}
 
+I supose that u have a config object/array/something to your database credentials
+
+I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others
 {% highlight php %}
 <?php
-  //I supose that u have a config object/array/something to your database credentials
-  /*I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others*/
   $pdo = new PDO("{$config->dbdriver}:host={$config->dbhost};dbname={$config->dbname}",$config->dbuser,$config->dbpass);
 {% endhighlight %}
 
+Let's select the whole thing
 {% highlight php %}	
 <?php
-  $query = "SELECT * FROM users"; //Let's select the whole thing
+  $query = "SELECT * FROM users";
 {% endhighlight %}
 
+Let's query it
+
+I'll not use prepared statements in this demo, cuz it's just a demo and with this strict select "SELECT * FROM users" we won't have problems
 {% highlight php %}
 <?php
-  $result = $pdo->query($query); //Let's query it
- /*I'll not use prepared statements in this demo, cuz it's just a demo and with this strict select "SELECT * FROM users" we don't have any user input*/
+  $result = $pdo->query($query); 
 {% endhighlight %}
 
+Let's fetch into our _DTO_
 {% highlight php %}
 <?php
-  $userDTO = $result->fetchObject("UserDTO"); //Let's fetch into our _DTO_
+  $userDTO = $result->fetchObject("UserDTO");
 {% endhighlight %}
 
+Let's dump and see the result!
 {% highlight php %}
 <?php
-  var_dump($userDTO); //Let's dump and see the result!
+  var_dump($userDTO);
   /*
   * it should print it
   *object(UserDTO)#5 (5) {
