@@ -85,7 +85,7 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 
 ###### And our php code
 
-Let's register an autoloader. So we have spl_autoloader_register
+Let's register an autoloader. So we have spl_autoloade_register
 
 In this way, we can register a lot of autoloaders in our application... we can register the Doctrine autoloader, the Twig autoloader, and others...
 {% highlight php %}
