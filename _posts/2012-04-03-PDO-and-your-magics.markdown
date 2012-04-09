@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [pdo, dto, magic]
-title: PDO and your magics - Part 1
+title: PDO and it's magics - Part 1
 author: Kinn Coelho Julião
 email: kinncj@gmail.com
 ---
