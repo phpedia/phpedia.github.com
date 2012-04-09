@@ -69,7 +69,7 @@ Enjoy us, contribute and share your knowledge!
 
 ### Important links:
 
-[Contribute](http://phpedia.org/contribute.html) "How can contribute"
+[contribute](http://phpedia.org/contribute.html) "How can contribute"
 
 [wiki](https://github.com/phpedia/phpedia.github.com/wiki) "We are writing for this"
 
