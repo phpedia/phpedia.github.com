@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [pdo, vo, magic]
+tags: [welcome, phpedia, starting]
 title: Welcome to PHPEdia - Your shared knowledge, PHP Enciclopedia HUB
 author: Kinn Coelho Julião
 email: kinncj@gmail.com
