@@ -148,7 +148,9 @@ _demo.php_
   var_dump($userDTO);	
 {% endhighlight %}
 
-You can *try* it running the code into [writecodeonline](http://writecodeonline.com/php/) or in this button <form action="http://writecodeonline.com/php/" method="post"><input type="hidden" name="code" value="$pdo = new PDO('sqlite::memory:');
+You can *try* it running the code into [writecodeonline](http://writecodeonline.com/php/) or in this button 
+
+<form action="http://writecodeonline.com/php/" method="post"><input type="hidden" name="code" value="$pdo = new PDO('sqlite::memory:');
 $pdo->exec('CREATE TABLE users(id INTEGER PRIMARY KEY, name, email VARCHAR, phone INTEGER, address)');
 $res = $pdo->exec('INSERT INTO users(name,email,phone,address) VALUES(&quot;test user&quot;,&quot;user@localhost&quot;,1199999999,&quot;São Paulo&quot;)');
 class UserDTO{ public $name,$email,$phone,$address;}
