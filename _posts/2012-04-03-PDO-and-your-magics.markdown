@@ -1,70 +1,65 @@
 ---
 layout: post
-tags: [pdo, vo, magic]
+tags: [pdo, dto, magic]
 title: PDO and your magics - Part 1
 author: Kinn Coelho Julião
 email: kinncj@gmail.com
 ---
 ## Hello guys
 
-In this article i'll show you the PDO _fetchObject_ working fine with a _VO_.
+In this article i'll show you the PDO _fetchObject_ working fine with a _DTO_.
 
-According to Martin Fowler, Eric Evans and other evangelists of a rich domain model, a Value Object is a simple object, usually with attributes that do not reference other objects, immutable and no identity, they are merely representative. 
+According to Martin Fowler, Eric Evans and other evangelists of a rich domain model, a Data Transfer Object is an object that carries data between processes in order to reduce the number of method 
 
-In other words, a true value object - The object that is worth something. 
+### Many people in the Sun community use the term "Value Object" for this pattern. I use it to mean something else - Martin Fowler. 
 
-Examples:
-
-* Number: is a typical example of a VO. Its value justifies its existence. It is immutable, because you can not change the values of a number. 
-You must create a new to this. 
-Their comparison is not just in all his attributes, comparing only the value which represents enough.
-
-* Money: Philip Footwear, probably based on the example of Fowler, gives a great example of VO talking about the Money object. 
-A money, we assume here, Dollar, has a value of one, five, ten, fifty, etc ... in real life, is a part. 
-Obviously, change its value would result in erasure or problems with the police, thus justifying its immutability, however, if I borrow ten dollars, no need to receive the same pay ten dollars. 
-It may be another note, both having the same value.
-
-* Colour: Why, a color valley, herm ... a color! 
-Why to represent colors is much better to use Enums, by the way, all or the vast majority of what PO should be possible to represent using Enumerators.
+_"Some people use it for DDD"_
 
 
-It gave great insight to understand the true VO? 
+When you're working with a remote interface, such as Remote Facade , each call to it is expensive. 
 
-It represents a value, simple and intuitive, right? 
+As a result you need to reduce the number of calls, and that means that you need to transfer more data with each call. 
+
+The solution is to create a Data Transfer Object that can hold all the data for the call.
+
+
+It represents a data... a value... over one transfer... simple and intuitive, right? 
+
+When we get this information from the Sun community, like you can see above, we can be confused with some "patterns" below:
+
+#### VO
 
 Very close to what we call primitive, after all, if the creators of programming languages, knew all VOs possible, we would not need to have objects explicitly declared for them, because our compilers recognize a simple USD 10.30 in the editor, and ten dollars and thirty cents.
 
-But then, it was not quite what you thought was a VO? 
-
-Well, I guess let's see: 
+#### TO
 
 For you, a VO was a structure with getterns and setters, commonly used to carry values ​​between layers and layers. 
 
 So, well this is the same confusion. 
 
-This is the TO (Transfer Object) - an adaptation of the Data-Transfer Object pattern (also cataloged by Fowler) - The TO is actually a composite of several attributes, serialized (is transported between layers), serving mainly to minimize traffic objects in a network.
+**This is the TO (Transfer Object) - an adaptation of the Data-Transfer Object pattern (also cataloged by Fowler) - The TO is actually a composite of several attributes, serialized (is transported between layers), serving mainly to minimize traffic objects in a network.**
 
 ## Come on, let's do it!
 
-At first time, i'll create a simple _VO_ called _UserVO_
+At first time, i'll create a simple _DTO_ called _UserDTO_
 
 {% highlight php %}
 <?php
-  //UserVO.php
-  class UserVO{
-    public $name,$email,$phone,$address; // We don't exactly need this... but i love to declare things.
+  //UserDTO.php
+  class UserDTO{
+    public $name,$email,$phone,$address; // We don't exactly need this... but i like to declare things.
         
-  //declare anything else that you want here!  
+  //declare anything else that you want here!
   }
 {% endhighlight %}
 
-Like you can see, we have an _UserVO_ with _name_, _email_, _phone_ and _address_ attributes.
+Like you can see, we have an _UserDTO_ with _name_, _email_, _phone_ and _address_ attributes.
 
 This is basicly a return from a UserDAO or a user table from your database.
 
 ### What's the magic?
 
-Basicly, when we fetch some data from database, we'll tell to PDO to put's the result into this _VO_ ..
+Basicly, when we fetch some data from database, we'll tell to PDO to put's the result into this _DTO_ ..
 Yeah, _crazy_ _hun_?
 
 Let's do some piece of code...
@@ -107,12 +102,12 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 	
   $result = $pdo->query($query); //Let's query it
 
-  $userVO = $result->fetchObject("UserVO"); //Let's fetch into our _VO_
+  $userDTO = $result->fetchObject("UserDTO"); //Let's fetch into our _DTO_
 
-  var_dump($userVO); //Let's dump and see the result!
+  var_dump($userDTO); //Let's dump and see the result!
   /*
   * it should print it
-  *object(UserVO)#5 (5) {
+  *object(UserDTO)#5 (5) {
   * ["name"]=>
   * string(9) "test user"
   * ["email"]=>
@@ -126,7 +121,5 @@ populate it! _Come_ _at_ _me_ _Bro_ !
   *}
   */	
 {% endhighlight %}
-
-Example running [here](http://kinncj.com.br/kinn/phpedia/examples/2012-04-03-2012-04-03-PDO-and-your-magics/1/)
 
 #### That's all folks!
