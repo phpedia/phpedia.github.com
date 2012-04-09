@@ -103,7 +103,7 @@ populate it! _Come_ _at_ _me_ _Bro_ !
   //I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others
   $pdo = new PDO("{$config->dbdriver}:host={$config->dbhost};dbname={$config->dbname}",$config->dbuser,$config->dbpass);
 	
-  $query = "SELECT * FROM users"; //Let's select the hole thing
+  $query = "SELECT * FROM users"; //Let's select the whole thing
 	
   $result = $pdo->query($query); //Let's query it
 
