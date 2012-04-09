@@ -14,7 +14,7 @@ We are talking about articles, tutorials, and others and how the community use/h
 
 At first thing, we remember the blogs, foruns and location-based community websites, like [PHPSP](http://phpsp.org.br), a Brazilian(São Paulo) PHP User Group. Then some _zine_ like [PHP Architect](http://www.phparch.com/) and finishing with good sites like [Net tuts +](http://net.tutsplus.com/).
 
-So in this way, and _drunked_ _away_, we thinkg about: _Man_, _how_ _the_ _hole_ _community_ _can_ _help_ _others_ _with_ _PHP_ _knowledge_ _?_
+So in this way, and _drunked_ _away_, we think about: _Man_, _how_ _the_ _hole_ _community_ _can_ _help_ _others_ _with_ _PHP_ _knowledge_ _?_
 
 ## Man, how the hole community can help others with the PHP knowledge
 First, we think about _Collab_ _Articles_
