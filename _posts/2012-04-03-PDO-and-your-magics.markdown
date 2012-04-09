@@ -23,7 +23,7 @@ As a result you need to reduce the number of calls, and that means that you need
 The solution is to create a Data Transfer Object that can hold all the data for the call.
 
 
-It represents a data... a value... over one transfer... simple and intuitive, right? 
+It represents a data... a value... in one transfer... simple and intuitive, right? 
 
 When we get this information from the Sun community, like you can see above, we can be confused with some "patterns" below:
 
