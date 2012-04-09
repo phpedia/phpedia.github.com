@@ -8,37 +8,37 @@ email: kinncj@gmail.com
 ## A new _collab_ way for good knowledge
 Hello guys...
 
-Some time ago, me and Thiago, was drinking and talking about PHP and OpenSource...
+Some time ago, me and Thiago, were drinking and talking about PHP and OpenSource...
 
-We are talking about articles, tutorials, and others and how the community use/help this.
+We were talking about articles, tutorials, and other stuff, and how the community uses/helps this.
 
-At first thing, we remember the blogs, foruns and location-based community websites, like [PHPSP](http://phpsp.org.br), a Brazilian(São Paulo) PHP User Group. Then some _zine_ like [PHP Architect](http://www.phparch.com/) and finishing with good sites like [Net tuts +](http://net.tutsplus.com/).
+First we remembered the blogs, forums and location-based community websites, like [PHPSP](http://phpsp.org.br), a Brazilian(São Paulo) PHP User Group. Then some _zine_ like [PHP Architect](http://www.phparch.com/) and finishing with good sites like [Net tuts +](http://net.tutsplus.com/).
 
-So in this way, and _drunked_ _away_, we think about: _Man_, _how_ _the_ _whole_ _community_ _can_ _help_ _others_ _with_ _PHP_ _knowledge_ _?_
+So in this way, and _drunked_ _away_, we wondered: _Man_, _how_ _the_ _whole_ _community_ _can_ _help_ _others_ _with_ _PHP_ _knowledge_ _?_
 
 ## Man, how the whole community can help others with the PHP knowledge
-First, we think about _Collab_ _Articles_
+First, we thought about _Collab_ _Articles_
 
-A kind of platform where peoples can share articles, tutorials and other with others.
+A kind of platform where people can share articles, tutorials and alike with others.
 
-So, we think something like a HUB...
+So, we realized something like a HUB...
 
-If we want to share things, and make a kind of PHP Hub... why we don't use GITHUB for this?
+If we wanted to share things, and make some sort of PHP Hub... why we don't use GITHUB for this?
 
 ## The GitHub
-So, and if people can create your article and share with me over github? an article pull request!
+So, and if people can create their articles and share it with me over github? an article pull request!
 
-Cool, it will make easy our "Share schema" and Github is it... sharing code(knowledge)
+Cool, it would make easy our "Share schema" and Github is all about... sharing code(knowledge)
 
-So, we can make a police, peoples can use github to contribute with this Open project! great!
+So, we can make a policy, people can use github to contribute with this Open project! great!
 
 ## First problem
 
-So, peoples will download the pdf files?? without a web interface? just... download and that's it?
+So, people will download the pdf files?? without a web interface? just... download and that's it?
 
 ## First (and unique) solution
 
-Wow, we can use github pages for this! people can request a "pull request", and with it's approved we generate a new page into this repo!
+Wow, we can use github pages for this! people can send a "pull request", and when it's approved we generate a new page into this repo!
 
 Cool, how we do this? with Github pages and Jekyll! simple... so, we have the PHP "Enciclopedia" hub ;) Cool
 
@@ -49,15 +49,15 @@ So, you need to see our rules, and basicly you will write your articles in Markd
 TextMate is a good editor to write markdown... but you can find others, even online editors
 {% endhighlight %}
 
-Then, you can share with others and i this way we are disseminating PHP Knowledge :)
+Then, you can share with others and this way we are disseminating PHP Knowledge :)
 
 ## Contribute n enjoy :)
 
 Simple, take a look at our [github](https://github.com/phpedia/phpedia.github.com) and feel free to contribute, improve and others :)
 
-### What about i can talk?
+### What can I talk about?
 
-About everything(related with PHP) you want!
+About anything (PHP related) you want!
 
 You want to talk about PHP environments?
 
@@ -65,7 +65,7 @@ You want to talk about PHP-CLI?
 
 You want to talk PHP and anything else more?
 
-Enjoy us, contribute and share your knowledge!
+Enjoy, contribute and share your knowledge!
 
 ### Important links:
 
