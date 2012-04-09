@@ -5,30 +5,30 @@ title: Welcome to PHPEdia - Your shared knowledge, PHP Enciclopedia HUB
 author: Kinn Coelho Julião
 email: kinncj@gmail.com
 ---
-## A new _collab_ way for good knowledge
+## A new _collaborative_ way to find good information
 Hello guys...
 
 Some time ago, me and Thiago, were drinking and talking about PHP and OpenSource...
 
 We were talking about articles, tutorials, and other stuff, and how the community uses/helps this.
 
-First we remembered the blogs, forums and location-based community websites, like [PHPSP](http://phpsp.org.br), a Brazilian(São Paulo) PHP User Group. Then some _zine_ like [PHP Architect](http://www.phparch.com/) and finishing with good sites like [Net tuts +](http://net.tutsplus.com/).
+First we remembered the blogs, forums and location-based community websites, like [PHPSP](http://phpsp.org.br), a Brazilian(São Paulo) PHP User Group. Then some magazines like [PHP Architect](http://www.phparch.com/) and finishing with good sites like [Net tuts +](http://net.tutsplus.com/).
 
-So in this way, and _drunked_ _away_, we wondered: _Man_, _how_ _the_ _whole_ _community_ _can_ _help_ _others_ _with_ _PHP_ _knowledge_ _?_
+So while we were _drunk_ and _thinking_, we wondered: _Man, how can the whole community help other with sharing the PHP knowledge?_
 
-## Man, how the whole community can help others with the PHP knowledge
-First, we thought about _Collab_ _Articles_
+## Man, how can the whole community help other with sharing the PHP knowledge?
+First, we thought about _Collaborative_ _Articles_
 
 A kind of platform where people can share articles, tutorials and alike with others.
 
-So, we realized something like a HUB...
+So, we thought of something like a HUB...
 
 If we wanted to share things, and make some sort of PHP Hub... why we don't use GITHUB for this?
 
-## The GitHub
+## GitHub
 So, and if people can create their articles and share it with me over github? an article pull request!
 
-Cool, it would make easy our "Share schema" and Github is all about... sharing code(knowledge)
+Cool, it would make our "Share schema" easy and Github is all about... sharing code(knowledge)
 
 So, we can make a policy, people can use github to contribute with this Open project! great!
 
@@ -69,7 +69,7 @@ Enjoy, contribute and share your knowledge!
 
 ### Important links:
 
-[contribute](http://phpedia.org/contribute.html) "How can contribute"
+[contribute](http://phpedia.org/contribute.html) "How to contribute"
 
 [wiki](https://github.com/phpedia/phpedia.github.com/wiki) "We are writing for this"
 
