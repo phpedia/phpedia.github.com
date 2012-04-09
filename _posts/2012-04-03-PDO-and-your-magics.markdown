@@ -88,7 +88,7 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 {% highlight php %}
 <?php
   //Let's register an autoloader
-  /*In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others./
+  /*In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others*/
   spl_autoload_register(function($className){
     require_once str_replace(array('\\','_'),'/',$className).'.php';
   });
