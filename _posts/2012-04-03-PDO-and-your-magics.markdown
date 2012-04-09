@@ -45,7 +45,6 @@ At first time, i'll create a simple _DTO_ called _UserDTO_
 
 {% highlight php %}
 <?php
-  //UserDTO.php
   class UserDTO{
     public $name,$email,$phone,$address; // We don't exactly need this... but i like to declare things.
         
@@ -87,22 +86,33 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 ###### And our php code
 
 {% highlight php %}
-<?php
-  //Look, it's a poor php code, just to demonstrate for all u guys.
-  //demo.php
+  //Let's register an autoloader
+  //In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others.
   spl_autoload_register(function($className){
-  require_once str_replace(array('\\','_'),'/',$className).'.php';
-  //Yeah, and autoloader... not too poor
+    require_once str_replace(array('\\','_'),'/',$className).'.php';
   });
+{% endhighlight %}
+
+{% highlight php %}
   //I supose that u have a config object/array/something to your database credentials...
   //I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others
   $pdo = new PDO("{$config->dbdriver}:host={$config->dbhost};dbname={$config->dbname}",$config->dbuser,$config->dbpass);
-	
-  $query = "SELECT * FROM users"; //Let's select the whole thing
-	
-  $result = $pdo->query($query); //Let's query it
+{% endhighlight %}
 
+{% highlight php %}	
+  $query = "SELECT * FROM users"; //Let's select the whole thing
+{% endhighlight %}
+
+{% highlight php %}
+  $result = $pdo->query($query); //Let's query it
+ //I'll not use prepared statements in this demo, cuz it's just a demo and with this strict select "SELECT * FROM users" we don't have any user input.
+{% endhighlight %}
+
+{% highlight php %}
   $userDTO = $result->fetchObject("UserDTO"); //Let's fetch into our _DTO_
+{% endhighlight %}
+
+{% highlight php %}
 
   var_dump($userDTO); //Let's dump and see the result!
   /*
@@ -121,5 +131,30 @@ populate it! _Come_ _at_ _me_ _Bro_ !
   *}
   */	
 {% endhighlight %}
+
+_demo.php_
+
+*it must be your demo file*
+
+{% highlight php %}
+<?php
+  spl_autoload_register(function($className){
+  require_once str_replace(array('\\','_'),'/',$className).'.php';
+  });
+  $pdo = new PDO("{$config->dbdriver}:host={$config->dbhost};dbname={$config->dbname}",$config->dbuser,$config->dbpass);
+  $query = "SELECT * FROM users";
+  $result = $pdo->query($query); 
+  $userDTO = $result->fetchObject("UserDTO"); 
+  var_dump($userDTO);	
+{% endhighlight %}
+
+You can *try* it running the code into [writecodeonline](http://writecodeonline.com/php/) or in this button <form action="http://writecodeonline.com/php/" method="post"><input type="hidden" name="code" value="$pdo = new PDO('sqlite::memory:');
+$pdo->exec('CREATE TABLE users(id INTEGER PRIMARY KEY, name, email VARCHAR, phone INTEGER, address)');
+$res = $pdo->exec('INSERT INTO users(name,email,phone,address) VALUES(&quot;test user&quot;,&quot;user@localhost&quot;,1199999999,&quot;São Paulo&quot;)');
+class UserDTO{ public $name,$email,$phone,$address;}
+$result = $pdo->query('SELECT * FROM users');
+$userDTO = $result->fetchObject('UserDTO');
+var_dump($userDTO);"/><input type="submit" value="run"></form>
+
 
 #### That's all folks!
