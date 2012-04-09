@@ -86,34 +86,39 @@ populate it! _Come_ _at_ _me_ _Bro_ !
 ###### And our php code
 
 {% highlight php %}
+<?php
   //Let's register an autoloader
-  //In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others.
+  /*In this way, we can register a lot of autoloaders in our application... register the Doctrine autoloader, the Twig, and others./
   spl_autoload_register(function($className){
     require_once str_replace(array('\\','_'),'/',$className).'.php';
   });
 {% endhighlight %}
 
 {% highlight php %}
-  //I supose that u have a config object/array/something to your database credentials...
-  //I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others
+<?php
+  //I supose that u have a config object/array/something to your database credentials
+  /*I'll not abstract this to a Proxy, cuz it's just a demo for the magic, not for patterns and others*/
   $pdo = new PDO("{$config->dbdriver}:host={$config->dbhost};dbname={$config->dbname}",$config->dbuser,$config->dbpass);
 {% endhighlight %}
 
 {% highlight php %}	
+<?php
   $query = "SELECT * FROM users"; //Let's select the whole thing
 {% endhighlight %}
 
 {% highlight php %}
+<?php
   $result = $pdo->query($query); //Let's query it
- //I'll not use prepared statements in this demo, cuz it's just a demo and with this strict select "SELECT * FROM users" we don't have any user input.
+ /*I'll not use prepared statements in this demo, cuz it's just a demo and with this strict select "SELECT * FROM users" we don't have any user input*/
 {% endhighlight %}
 
 {% highlight php %}
+<?php
   $userDTO = $result->fetchObject("UserDTO"); //Let's fetch into our _DTO_
 {% endhighlight %}
 
 {% highlight php %}
-
+<?php
   var_dump($userDTO); //Let's dump and see the result!
   /*
   * it should print it
