@@ -5,7 +5,7 @@ title: Welcome to PHPEdia - Your shared knowledge, PHP Enciclopedia HUB
 author: Kinn Coelho Julião
 email: kinncj@gmail.com
 ---
-## A new _collab_ way for good knowlegde
+## A new _collab_ way for good knowledge
 Hello guys...
 
 Some time ago, me and Thiago, was drinking and talking about PHP and OpenSource...
