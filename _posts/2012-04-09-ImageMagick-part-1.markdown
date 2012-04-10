@@ -46,7 +46,7 @@ We will need ImageMagick version 6.2.4+ (better 6.5.7+, becouse we can use the p
 
 _I assume you have installed the extension via PECL_
 
-The first thing we should do is find an image to work, like [this one](http://www.arteyfotografia.com.ar/contenido/objetos/df/7f/98/df7f98f48403cb3bd1ab9b4160cd82522c44c03b/mini_500_16800_1283811426672964.jpg)
+The first thing we should do is find an image to work, like [this one](http://kinncj.com.br/kinn/phpedia/examples/2012-04-07-ImageMagick/1/mini_500_16800_1283811426672964.jpg)
 
 Basicly, we need to define what we want to do with the image.
 
