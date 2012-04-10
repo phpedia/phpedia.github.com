@@ -12,7 +12,7 @@ It can read and write assets in a variety of formats like JPEG, GIF, PNG, TIFF a
 
 ## For what?
 
-You can use ImageMagick to resize, flip, mirror, rotate, distort, shear, adjust image colors, apply special effects, draw text, lines, elipses, convert video files and more.
+You can use ImageMagick to resize, flip, mirror, rotate, distort, shear, adjust image colors, apply special effects, draw text, lines, eclipses, convert video files and more.
 
 ## How it works?
 
