@@ -12,7 +12,7 @@ It can read and write assets in a variety of formats like JPEG, GIF, PNG, TIFF a
 
 ## For what?
 
-You can use ImageMagick to resize, flip, mirror, rotate, distort, shear, adjust image colors, apply special effects, draw text, linex, eclipses, convert video files and more.
+You can use ImageMagick to resize, flip, mirror, rotate, distort, shear, adjust image colors, apply special effects, draw text, lines, elipses, convert video files and more.
 
 ## How it works?
 
@@ -30,7 +30,7 @@ At first moment, we think about _exec_, but in ImageMagick case, we have three e
 * [Imagick](http://pecl.php.net/package/imagick)
 * [phMagick](http://www.francodacosta.com/phmagick)
 
-### Wich one do we use?
+### Which one do we use?
 
 Imagick
 
