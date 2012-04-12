@@ -3,3 +3,22 @@ layout: default
 ---
 {% include JB/setup %}
 {% include themes/twitter/post.html %}
+
+<script type="text/javascript">
+function getCommitData(postFile)
+{
+	$.get(
+		'https://api.github.com/repos/phpedia/phpedia.github.com/commits?per_page=1&path=_posts/' + postFile, 
+		function (data) {
+			var div = $('div.span4');
+			$('h4:first', div).prepend('Last commit by ' + data[0].commit.committer.name);
+			$('img', div).attr('src', data[0].committer.avatar_url);
+			$('div.date', div).text(data[0].commit.committer.date);
+		}
+	);	
+}
+
+$(document).ready(function() {
+	getCommitData("{{page.filename}}");
+});
+</script>
