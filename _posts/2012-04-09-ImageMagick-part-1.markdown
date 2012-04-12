@@ -2,8 +2,8 @@
 layout: post
 tags: [imagemagick, digital asset, image]
 title: ImageMagick - A great tool to work with digital assets - Part 1
-author: Kinn Coelho Julião
-email: kinncj@gmail.com
+filename: 2012-04-09-ImageMagick-part-1.markdown
+
 ---
 ## Image? Magick?
 ImageMagick is a software suite to create, edit, compose or convert digital assets.

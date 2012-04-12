@@ -2,8 +2,7 @@
 layout: post
 tags: [welcome, phpedia, starting]
 title: Welcome to PHPEdia - Your shared knowledge, PHP Enciclopedia HUB
-author: Kinn Coelho Julião
-email: kinncj@gmail.com
+filename: 2012-04-02-Welcome-to-PHPEdia.markdown
 ---
 ## A new _collaborative_ way to find good information
 Hello guys...
