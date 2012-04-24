@@ -159,7 +159,7 @@ _demo.php_
   var_dump($userDTO);	
 {% endhighlight %}
 
-You can *try* it running the code into [writecodeonline](http://writecodeonline.com/php/) or directly in [this link](http://kinncj.com.br/kinn/phpedia/examples/2012-04-03-2012-04-03-PDO-and-your-magics/1/) 
+You can *try* it running the code into [PHPAD](http://phpad.org) or directly in [this link](http://www.phpad.org/run/1494005118) 
 
 
 #### That's all folks!
