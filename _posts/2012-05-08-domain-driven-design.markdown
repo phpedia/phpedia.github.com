@@ -47,3 +47,4 @@ Find more about Domain-Driven Design.
 Hugs
 
 This article was taken from my blog: [The Blog of Paulo Teixeira](http://www.pauloteixeira.blog.br/site/en/content/2012/05/domain-driven-design/).
+
