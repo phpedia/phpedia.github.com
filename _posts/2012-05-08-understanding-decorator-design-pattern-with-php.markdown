@@ -33,7 +33,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 
 {% highlight php %}
 < ?php
-	class Account extends Decorator {
+	class Account extends Decorator{
 
 		public $numAccount;
 		public $numAtualFounds;
@@ -61,14 +61,13 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			return $result;
 		}
 	}
-?>
 {% endhighlight %}
 
 ###SavingsAccount.php
 
 {% highlight php %}
 < ?php
-	class SavingsAccount extends Decorator {
+	class SavingsAccount extends Decorator{
 
 		public function receiveTransferredFounds( Acount $numPayAccount , $numAcount , $transferValue ) {
 			// implementation
@@ -78,14 +77,13 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			return $result;
 		}
 	}
-?>
 {% endhighlight %}
 
 ###Decorator.php
 
 {% highlight php %}
 < ?php
-	class Decorator {
+	class Decorator{
 		private $DGS_VERIFY_SAVINGS_ACCOUNT = 500;
 
 		protected function doFoundTransfer( Account $numPayAccount , $numAccount  , $transferValue ) {
@@ -110,7 +108,6 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			}
 		}
 	}
-?>
 {% endhighlight %}
 
 ###Implementation
@@ -133,7 +130,6 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 	$transferResult = $account->transferFounds( 556558474500 , 2365.50 );
 
 	echo("<p>" . $transferResult . "</p>");
-?>
 {% endhighlight %}
 
 Well as we saw above, we made two payments to two different accounts. No need to report what kind of account would be without having to instantiate anything more.
