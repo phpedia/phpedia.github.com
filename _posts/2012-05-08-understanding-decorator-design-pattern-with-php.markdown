@@ -39,7 +39,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 ###Account.php
 
 {% highlight php %}
-< ?php
+<?php
 	class Account extends Decorator{
 
 		public $numAccount;
@@ -74,7 +74,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 ###SavingsAccount.php
 
 {% highlight php %}
-< ?php
+<?php
 	class SavingsAccount extends Decorator{
 
 		public function receiveTransferredFounds( Acount $numPayAccount , $numAcount , $transferValue ) {
@@ -91,7 +91,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 ###Decorator.php
 
 {% highlight php %}
-< ?php
+<?php
 	class Decorator{
 		private $DGS_VERIFY_SAVINGS_ACCOUNT = 500;
 
@@ -123,7 +123,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 ###Implementation
 
 {% highlight php %}
-< ?php
+<?php
 	require_once("Decorator.php");
 	require_once("Account.php");
 	require_once("SavingsAccount.php");	
