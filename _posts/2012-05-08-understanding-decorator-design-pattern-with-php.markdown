@@ -1,3 +1,10 @@
+---
+layout: post
+tags: [Decorator, Design pattern]
+title: Understanding the decorator design pattern
+filename: 2012-05-08-understanding-decorator-design-pattern-with-php.markdown
+
+---
 When we read the name of the pattern Decorator would imagine that silly name, meaningless. Good is not as meaningless as well.
 
 The Decorator works exactly as the name describes.

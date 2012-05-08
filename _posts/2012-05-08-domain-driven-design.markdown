@@ -1,3 +1,10 @@
+---
+layout: post
+tags: [DDD, Domain Drive Design, Design pattern]
+title: Domain Driven Design
+filename: 2012-05-08-domain-driven-design.markdown
+
+---
 When we develop a software, we know that this software is to solve a need for someone. This need for those who requested the software can be characterized as a problem. Thus we conclude that a software used to solve a problem. All around the needs of the problem may be called the Domain.
 
 Thus, the name Domain-Drive Design could be translated to: Lead the Design Application by Domain or maybe: Oriented Domain Programming(Problems).
