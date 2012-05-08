@@ -61,6 +61,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			return $result;
 		}
 	}
+?>
 {% endhighlight %}
 
 ###SavingsAccount.php
@@ -77,6 +78,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			return $result;
 		}
 	}
+?>
 {% endhighlight %}
 
 ###Decorator.php
@@ -108,6 +110,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 			}
 		}
 	}
+?>
 {% endhighlight %}
 
 ###Implementation
@@ -130,6 +133,7 @@ The Decorator can help us do just that, he will add responsibility receiveFounds
 	$transferResult = $account->transferFounds( 556558474500 , 2365.50 );
 
 	echo("<p>" . $transferResult . "</p>");
+?>
 {% endhighlight %}
 
 Well as we saw above, we made two payments to two different accounts. No need to report what kind of account would be without having to instantiate anything more.
