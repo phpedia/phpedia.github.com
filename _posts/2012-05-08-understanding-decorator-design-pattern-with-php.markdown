@@ -145,3 +145,4 @@ This pattern is very simple and very easy to use.
 I hope you enjoyed, and good until the next code.
 
 This article was taken from my blog: [The Blog of Paulo Teixeira](http://www.pauloteixeira.blog.br/site/en/content/2012/05/understanding-decorator-design-pattern-with-php/).
+
