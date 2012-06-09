@@ -1,23 +1,35 @@
 ---
-layout: default
-title: Welcome to PHPedia
+layout: page
+title: PHPedia
+tagline: Open knowledge
 ---
+{% include JB/setup %}
 
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
-</div>
-
-<ul>
-{% for post in paginator.posts %}
-	<li>{{ post.date | date "%B %e, %Y" }} - {{post.url}} - {{post.title}}</li>
-{% endfor %}
+<ul class="posts">
+  {% for post in paginator.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>
+  {% endfor %}
 </ul>
 
-{% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-  <ul>
-    {% assign pages_list = tag[1] %}
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
 
+<div class="pagination">
+  <ul>
+  {% if paginator.previous_page %}
+	{% if paginator.previous_page <= 1 %}
+    <li class="prev"><a href="/" title="Home">&larr; Previous</a></li>
+	{% else %}
+	<li class="prev"><a href="/page{{ paginator.previous_page }}" title="{{ paginator.previous_page }}">&larr; Previous</a></li>
+	{% endif %}
+  {% else %}
+    <li class="prev disabled"><a>&larr; Previous</a></li>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <li class="next"><a href="/page{{ paginator.next_page }}" title="{{ paginator.next_page }}">Next &rarr;</a></li>
+  {% else %}
+    <li class="next disabled"><a>Next &rarr;</a>
+  {% endif %}
+  </ul>
+</div>
+
+Page {{paginator.page}} of {{paginator.total_pages}}
